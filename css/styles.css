@@ -41,7 +41,7 @@ body {
 .card {
     width: 329px;
     height: 442px;
-    padding: 48px 50px;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
