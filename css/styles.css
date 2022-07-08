@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Lexend+Deca&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 375px;
+    background-color: var(--very-light-gray);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 24px;
+}
+.grid-wrapper {
+    background-color: red;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card {
+    width: 329px;
+    height: 442px;
+    padding: 48px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sedans {
+    background-color: var(--bright-orange);
+}
+.suvs {
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+.card-image {
+    height: 40px;
+    width: auto;
+    margin: 0 auto 0 0;
+}
+.card-title {
+    font-family: "Big Shoulders Display";
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.card-text{
+    font-family: "Lexend Deca";
+    color: var(--transparent-white);
+    font-weight: 400;
+    font-size: 0.938rem; /*15px*/
+    line-height: 1.563rem;
+}
+.card-button {
+    background-color: var(--very-light-gray);
+    width: 148px;
+    height: 48px;
+    border: 2px solid var(--very-light-gray);
+    outline: none;
+    border-radius: 50px;
+    font-family: "Lexend Deca";
+    font-size: 0.938rem; /*15px*/
+}
+.sedans .card-button {
+    color: var(--bright-orange);
+}
+.suvs .card-button {
+    color: var(--dark-cyan);
+}
+.luxury .card-button {
+    color: var(--very-dark-cyan);
+}
+.card-button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+    cursor: pointer;
+}
+
+@media only screen and (min-width:  920px){
+    .grid-wrapper {
+        flex-direction: row;
+    }
+    .container {
+        padding: 0;
+    }
+    .card {
+        width: 306px;
+        height: 500px;;
+    }
+    /*.card-title {
+        margin: 0;
+    }*/
+    .card-button {
+        margin-top: 58px;
+    }
+}
